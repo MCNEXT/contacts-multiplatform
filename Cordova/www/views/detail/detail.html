@@ -1,0 +1,20 @@
+﻿<div>
+    <md-content>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" aria-label="Back" ng-click="back();">
+                    <img ng-src="img/chevron.png"/>
+                </md-button>
+                <h2>
+                    <span>Contact detail</span>
+                </h2>
+            </div>
+        </md-toolbar>
+        <md-card>
+            <img ng-src="img/{{ person.img }}" class="md-card-image">
+            <md-card-content>
+                <p>{{ person.lastname }} {{person.firstname}}</p>
+            </md-card-content>
+        </md-card>
+    </md-content>
+</div>

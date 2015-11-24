@@ -1,0 +1,18 @@
+﻿<div>
+    <md-content>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>
+                    <span>Contacts list</span>
+                </h2>
+            </div>
+        </md-toolbar>
+        <md-list ng-cloak>
+            <md-list-item ng-repeat="person in people" ng-click="go($index)">
+                <img alt="{{ person.lastname }}" ng-src="img/{{ person.img }}" class="md-avatar" />
+                <p>{{ person.lastname }} {{person.firstname}}</p>
+                <md-icon md-svg-icon="communication:messenger" aria-label="Open Chat" class="md-secondary md-hue-3"></md-icon>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</div>
